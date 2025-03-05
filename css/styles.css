@@ -168,7 +168,6 @@ body {
   align-items: center;
   gap: var(--spacing-16);
   margin-block-end: var(--spacing-60);
-  padding: var(--spacing-16) 0;
   text-align: center;
 }
 h1.title {
@@ -237,6 +236,9 @@ button:hover {
 
 /********* Media Queries **********/
 @media screen and (min-width: 32.8125rem) {
+  .wrapper {
+    margin-block-start: 10.25rem;
+  }
   h1.title {
     font-size: var(--fs-48);
   }
