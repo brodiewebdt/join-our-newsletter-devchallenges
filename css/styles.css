@@ -197,7 +197,8 @@ p.subtitle {
 .form {
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-24);
+  /* justify-content: space-between;
+  gap: var(--spacing-24); */
 }
 
 input,
@@ -206,11 +207,13 @@ button {
   font-size: var(--fs-16);
   font-weight: var(--fw-500);
   padding: var(--spacing-20) var(--spacing-16);
+  height: 59px;
+  margin-block-end: var(--spacing-24);
 }
 
 input {
-  background-color: var(--color-neutral-300);
-  border: 1px solid var(--color-neutral-400);
+  background-color: var(--color-neutral-200);
+  border: 1px solid var(--color-neutral-300);
   color: var(--color-neutral-800);
   text-align: center;
 }
@@ -230,4 +233,15 @@ button:hover {
   color: var(--color-neutral-800);
   font-size: var(--fs-14);
   text-align: center;
+}
+
+/********* Media Queries **********/
+@media screen and (min-width: 32.8125rem) {
+  h1.title {
+    font-size: var(--fs-48);
+  }
+
+  p.subtitle {
+    font-size: var(--fs-20);
+  }
 }
